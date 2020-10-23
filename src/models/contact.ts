@@ -3,8 +3,8 @@ import { IUser } from "./user";
 
 export interface IContact extends Document{
     user:IUser,
-    fistname:string,
-    lastname:string,
+    fistName:string,
+    lastName:string,
     email:string,
     contactNumber:string,
 }

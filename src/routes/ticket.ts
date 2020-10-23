@@ -6,6 +6,5 @@ const userRouter:Router =Router();
 
 userRouter.post('/create', TicketController.Create);
 userRouter.post('/update', TicketController.Update);
-//userRouter.post('login', Login);
 
 export default userRouter;

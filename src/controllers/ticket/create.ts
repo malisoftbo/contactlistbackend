@@ -39,7 +39,7 @@ export const Create = async (req: Request, res: Response) => {
             to: userResult.email, // list of receivers
             subject: "Recovery your account", // Subject line
             text: "Recovery you password - Contact List System", // plain text body
-            html: `<b>Hello, to revovery you account pleace click in the bellow link</b><br><a href="http://localhost:300/ticket/${ticketSaved._id}" target="_blank">http://localhost:300/ticket/${ticketSaved._id}</a>`, // html body
+            html: `<b>Hello, to revovery you account pleace click in the bellow link</b><br><a href="http://localhost:3000/ticket/${ticketSaved._id}" target="_blank">http://localhost:300/ticket/${ticketSaved._id}</a>`, // html body
         });
 
         console.log("Message sent: %s", info.messageId);
