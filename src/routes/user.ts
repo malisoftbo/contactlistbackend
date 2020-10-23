@@ -1,14 +1,12 @@
 import { Router } from "express";
-import { userAuth } from "../auth/userAuth";
 
+import { userAuth } from "../auth/userAuth";
 import UserController from "../controllers/user";
 
 const userRouter:Router =Router();
 
-//import { Create } from "../controllers/user";
-
 userRouter.post('/create', UserController.Create);
-//userRouter.post('login', userAuth, UpdatePassword);
-//userRouter.post('login', Login);
+userRouter.post('/login', UserController.Login);
+userRouter.post('/update', userAuth, UserController.Update);
 
 export default userRouter;

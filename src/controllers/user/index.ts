@@ -1,5 +1,5 @@
 import { Create } from "./create";
+import { Login } from "./login";
+import { Update } from "./update";
 
-export const User={Create};
-
-export default User;
+export default { Create, Login, Update };

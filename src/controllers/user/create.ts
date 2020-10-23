@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { userAuth } from "../../auth/userAuth";
 import User,{IUser} from "../../models/user";
+
 export const Create=async(req:Request,res:Response)=>{
     let {name,email,password}=req.body;
     let userNew:IUser=new User({name,email,password});    
